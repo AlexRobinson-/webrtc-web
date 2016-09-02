@@ -31,7 +31,7 @@ io.sockets.on('connection', function (socket) {
 
     var clientsInRoom = io.nsps['/'].adapter.rooms[room];
     var numClients = clientsInRoom === undefined ? 0 : Object.keys(clientsInRoom).length;
-    // socket.io 1.4.8
+    // socket.io 1.4
     // var numClients = clientsInRoom === undefined ? 0 : Object.keys(clientsInRoom.sockets).length;
 
     // max two clients
